@@ -1,14 +1,19 @@
-import React, { Component } from 'react';
-import Layout from './layout';
+import React, { Component } from 'react'
+import Layout from './layout'
+import CategoryList from './category-list'
 
 class App extends Component {
+  componentDidMount() {
+  }
+
   render() {
     return (
       <Layout>
-        Submit a YouTube video to a Theme and vote on the best of the week.
+        <CategoryList />
       </Layout>
-    );
+    )
   }
+
 }
 
-export default App;
+export default App
